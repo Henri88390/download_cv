@@ -1,0 +1,29 @@
+.home-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: "0px") {
+    background-image: url("../public/documents/rocks_small.jpg");
+  }
+  @media (min-width: "600px") {
+    background-image: url("../public/documents/rocks.jpg");
+  }
+}
+
+.texts {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
