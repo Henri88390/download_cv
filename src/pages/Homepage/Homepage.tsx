@@ -12,7 +12,7 @@ function Homepage(props: FC<HomepageProps>) {
         <div className="__title">Welcome! I'm Henri Lambert</div>
         <div className="__subtitle">
           A <img src={frenchFlag} alt="French flag" className="__flag" />{" "}
-          software & web developer based in{" "}
+          software & web developer living in{" "}
           <img src={polandFlag} alt="Polish flag" className="__flag" />
         </div>
       </div>

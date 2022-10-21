@@ -10,18 +10,34 @@
   @extend .text-wrapper__background;
   color: white;
   align-items: center;
+  margin-bottom: 200px;
   display: flex;
   flex-direction: column;
+  @media (min-width: 0px) {
+    padding: 20px 20px;
+  }
+  @media (min-width: 350px) {
+    padding: 20px 40px;
+  }
 }
 
 .text-wrapper__background {
-  padding: 20px 40px;
   background: grey;
-  width: 80%;
+  width: 60%;
+  border-radius: 10px;
 }
 
 .__title {
-  font-size: 4rem;
+  @media (min-width: 0px) {
+    font-size: 20px;
+  }
+  @media (min-width: 700px) {
+    font-size: 35px;
+  }
+  @media (min-width: 900px) {
+    font-size: 50px;
+  }
+
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
@@ -32,10 +48,17 @@
 .__subtitle {
   display: flex;
   color: rgb(247, 242, 242);
+
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 500px) {
+    font-size: 20px;    
+  }
 }
 
 .__flag {
-  width: 15px;
+  height: 20px;
+  width: 20px;
   border-radius: 5px;
   margin: 0px 7px;
 }
