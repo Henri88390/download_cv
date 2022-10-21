@@ -30,7 +30,7 @@ function Header(props: FC<HeaderProps>) {
           alt="Download CV icon"
         ></img>
       </div>
-      <a href="mailto:contact@test.com">
+      <a href="mailto:henri.lambert9@gmail.com">
         <img src="/icons/mail.png" className="__mailto" alt="Mail to"></img>
       </a>
       <a href="https://github.com/Henri88390" target="_blank" rel="noreferrer">
