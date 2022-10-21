@@ -6,7 +6,7 @@ interface HeaderProps {}
 function Header(props: FC<HeaderProps>) {
   function downloadCv() {
     // using Java Script method to get PDF file
-    fetch("documents/CV_Frontend_Developer_Henri_Lambert.pdf").then(
+    fetch("documents/cv.pdf").then(
       (response) => {
         response.blob().then((blob) => {
           // Creating new object of PDF file
