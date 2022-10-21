@@ -1,3 +1,75 @@
 .page1-container {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 100px 50px;
+}
+
+.page1-content {
+  display: grid;
+  grid-gap: 80px;
+}
+
+.page1__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 50px;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.body {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.body-left {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.body-right {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.body-right__description {
+  color: #666;
+  line-height: 1.7;
+}
+
+.__title {
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.body-left__title {
+  @extend .__title;
+}
+
+.body-right__title {
+  @extend .__title;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.heading-sec__main {
+  margin-top: 45px;
+  height: 1px;
+  width: 70%;
+  background: rgba(36, 33, 33, 0.103);
+  border-radius: 5px;
+}
+
+.__link {
+  color: #666;
+  font-weight: bold;
+  text-decoration: none;
 }
