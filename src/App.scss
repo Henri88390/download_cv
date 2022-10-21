@@ -1,16 +1,13 @@
-.home--container {
-  width: 100%;
+.home-container {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  @media (min-width: "0px") {
-    background-image: url("../public/documents/rocks_small.jpg");
-  }
-  @media (min-width: "600px") {
-    background-image: url("../public/documents/rocks.jpg");
-  }
+  // @media (min-width: "0px") {
+  //   background-image: url("../public/documents/rocks_small.jpg");
+  // }
+  // @media (min-width: "600px") {
+  //   background-image: url("../public/documents/rocks.jpg");
+  // }
+  background-color: rgb(162, 226, 162);
+  background-attachment: fixed; 
 }
 
 .texts {
@@ -27,3 +24,41 @@
   padding: 0;
   margin: 0;
 }
+
+.texts__title {
+  z-index: 2;
+}
+.texts__subtitle {
+  z-index: 2;
+}
+// .__polygon-1 {
+//   position: absolute;
+//   background: black;
+//   bottom: 0px;
+//   right: 0px;
+//   width: 600px;
+//   height: 200px;
+//   z-index: 1;
+//   @media (min-width: "0px") {
+//     border-radius: 0px;
+//   }
+//   @media (min-width: "600px") {
+//     border-radius: 50px 0px 0px 0px;
+//   }
+// }
+
+// .__polygon-2 {
+//   position: absolute;
+//   background: rgb(124, 85, 233);
+//   left: 0px;
+//   bottom: 0px;
+//   width: 600px;
+//   height: 300px;
+//   z-index: 0;
+//   @media (min-width: "0px") {
+//     border-radius: 0px;
+//   }
+//   @media (min-width: "600px") {
+//     border-radius: 0px 50px 0px 0px;
+//   }
+// }
