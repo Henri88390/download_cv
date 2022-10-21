@@ -3,7 +3,7 @@ import "./App.scss";
 
 const App = () => {
   // Function will execute on click of button
-  const onButtonClick = () => {
+  const downloadCv = () => {
     // using Java Script method to get PDF file
     fetch("documents/CV_Frontend_Developer_Henri_Lambert.pdf").then(
       (response) => {
@@ -19,19 +19,12 @@ const App = () => {
       }
     );
   };
-  let className = "home-container";
-  let classNameText = "texts";
   return (
-    <div className={className}>
-      <div className={classNameText}>
-        <div>WELCOME! I'M HENRI</div>
-        <div className="texts-2">I'm a frontend web developer</div>
-        <div className="buttons">
-          <button onClick={onButtonClick}>Download my CV</button>{" "}
-          <a href="www.google.fr">
-            <button>More about me</button>
-          </a>
-        </div>
+    <div className="home--container">
+      <div className="texts">
+        <div className="texts--title">WELCOME! I'M HENRI</div>
+        <div className="texts--subtitle">I'm a frontend web developer</div>
+        <button onClick={downloadCv}>Download my CV</button>
       </div>
     </div>
   );
