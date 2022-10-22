@@ -29,7 +29,6 @@ If you have an opportunity that matches my skills and experience, don't hesitate
       <div className="page1__title">ABOUT ME</div>
       <div className="page1-content">
         <div className="body-left">
-          <div className="body-left__title">My programmer journey</div>
           <div className="body-right__description">{text1}</div>
         </div>
         <div className="body-right">
