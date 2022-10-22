@@ -24,16 +24,14 @@ function Page1(props: FC<Page1Props>) {
   I'm open to job opportunities where I can contribute, learn
   and grow.  
    If you have an opportunity that matches my skills and
-  experience then don't hesitate to contact me.  Feel free to connect to me
+  experience, don't hesitate to contact me.  Feel free to connect to me
   on `;
 
   const text2 = `You can also check my `;
 
   return (
     <div className="page1-container">
-      <div className="page1__header">
-        <div>ABOUT ME</div>
-      </div>
+      <div className="page1__title">ABOUT ME</div>
       <div className="page1-content">
         <div className="body-left">
           <div className="body-left__title">My programmer journey</div>
