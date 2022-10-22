@@ -4,17 +4,11 @@ import "./Homepage.scss";
 interface HomepageProps {}
 
 function Homepage(props: FC<HomepageProps>) {
-  const polandFlag = "/icons/pl.png";
-  const frenchFlag = "/icons/fr.png";
   return (
     <div className="homepage-container">
       <div className="text__wrapper">
-        <div className="__title">Welcome! I'm Henri Lambert</div>
-        <div className="__subtitle">
-          A <img src={frenchFlag} alt="French flag" className="__flag" />{" "}
-          software & web developer living in{" "}
-          <img src={polandFlag} alt="Polish flag" className="__flag" />
-        </div>
+        <div className="__title">Welcome! I'm Henri</div>
+        <div className="__subtitle">A software & web developer</div>
       </div>
     </div>
   );

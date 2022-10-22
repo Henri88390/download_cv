@@ -12,13 +12,15 @@ function Page1(props: FC<Page1Props>) {
     "Typescript",
     "Angular",
     "React",
-    ".Net",
+    ".NET",
+    "Python",
     "SQL",
     "Git",
   ]);
 
   const text1 = `I'm a software & web
   developer with a Master's degree in IT.
+  I'm French, currently living in Poland.
   I'm open to job opportunities where I can contribute, learn
   and grow.  
    If you have an opportunity that matches my skills and
