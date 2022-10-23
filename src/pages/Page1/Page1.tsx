@@ -22,7 +22,10 @@ function Page1(props: FC<Page1Props>) {
 
   const text1 = `I'm a French software & web developer with a Master's degree in IT, currently living in Krakow, Poland.
 
-  I have almost 2 years of experience as a software developer. I can work on both frontend and backend, although my personnal favorite is frontend, which I love to do :)
+I have almost 2 years of experience as a software developer. During this time, I've had the occasion to work on both frontend and backend, using different technologies.
+
+My main backend languages are: .NET, Python.
+My main frontend frameworks are: Angular, React.
 
 If you have an opportunity that matches my skills and experience, don't hesitate to contact me.`;
 
