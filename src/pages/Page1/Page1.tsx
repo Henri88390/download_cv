@@ -19,8 +19,8 @@ function Page1(props: FC<Page1Props>) {
   ]);
 
   const text1 = `I'm a French software & web developer with a Master's degree in IT, currently living in Krakow, Poland.
-  
-I'm open to job opportunities where I can contribute, learn and grow.  
+
+  I have almost 2 years of experience as a software developer. I can work on both frontend and backend, although my personnal favorite is frontend, which I love to do :)
 
 If you have an opportunity that matches my skills and experience, don't hesitate to contact me.`;
 
