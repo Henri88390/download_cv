@@ -29,10 +29,11 @@ If you have an opportunity that matches my skills and experience, don't hesitate
       <div className="page1__title">ABOUT ME</div>
       <div className="page1-content">
         <div className="body-left">
-          <div className="body-right__description">{text1}</div>
+          <div className="about-me__title">A brief summary</div>
+          <div className="about-me__description">{text1}</div>
         </div>
         <div className="body-right">
-          <div className="body-right__title">My Skills</div>
+          <div className="about-me__title">My Skills</div>
           <div className="skills">
             {skills.map((skill) => (
               <Skill key={skill} title={skill} />

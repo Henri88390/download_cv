@@ -61,20 +61,16 @@
   }
 }
 
-.body-right__description {
+.about-me__description {
   color: #666;
   line-height: 1.7;
   white-space: pre-wrap;
 }
 
-.__title {
+.about-me__title {
   letter-spacing: 2px;
   font-weight: bold;
   margin-bottom: 20px;
-}
-
-.body-right__title {
-  @extend .__title;
 }
 
 .skills {
