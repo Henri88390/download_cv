@@ -13,9 +13,11 @@ function Page1(props: FC<Page1Props>) {
     "Angular",
     "React",
     ".NET",
-    "Python",
-    "SQL",
     "Git",
+    "Docker",
+    "AWS",
+    "SQL",
+    "Python",
   ]);
 
   const text1 = `I'm a French software & web developer with a Master's degree in IT, currently living in Krakow, Poland.

@@ -1,5 +1,5 @@
 import { Footer, Header } from "components";
-import { ExperiencesPage, Homepage, Page1 } from "pages";
+import { ContactPage, ExperiencesPage, Homepage, Page1 } from "pages";
 import React from "react";
 import "./App.scss";
 
@@ -10,6 +10,7 @@ const App = () => {
       <Homepage />
       <Page1 />
       <ExperiencesPage />
+      <ContactPage />
       <Footer />
     </div>
   );
