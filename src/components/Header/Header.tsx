@@ -6,19 +6,17 @@ interface HeaderProps {}
 function Header(props: FC<HeaderProps>) {
   function downloadCv() {
     // using Java Script method to get PDF file
-    fetch("documents/cv.pdf").then(
-      (response) => {
-        response.blob().then((blob) => {
-          // Creating new object of PDF file
-          const fileURL = window.URL.createObjectURL(blob);
-          // Setting various property values
-          let alink = document.createElement("a");
-          alink.href = fileURL;
-          alink.download = "CV_Henri_Lambert.pdf";
-          alink.click();
-        });
-      }
-    );
+    fetch("documents/cv.pdf").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "CV_Henri_Lambert.pdf";
+        alink.click();
+      });
+    });
   }
 
   return (
@@ -26,19 +24,15 @@ function Header(props: FC<HeaderProps>) {
       <div className="__download-cv-button" onClick={downloadCv}>
         <img
           src="/icons/cv.png"
-          className="__download-cv-icon"
+          className="__header-img"
           alt="Download CV icon"
         ></img>
       </div>
       <a href="mailto:henri.lambert9@gmail.com">
-        <img src="/icons/mail.png" className="__mailto" alt="Mail to"></img>
+        <img src="/icons/mail.png" className="__header-img" alt="Mail to"></img>
       </a>
       <a href="https://github.com/Henri88390" target="_blank" rel="noreferrer">
-        <img
-          src="github-logo.png"
-          alt="GitHub"
-          className="dropdown__img-left"
-        ></img>
+        <img src="github-logo.png" alt="GitHub" className="__header-img"></img>
       </a>
       <a
         href="https://www.linkedin.com/in/henri-lambert-15a525252/"
@@ -46,9 +40,9 @@ function Header(props: FC<HeaderProps>) {
         rel="noreferrer"
       >
         <img
-          src="linkedin-logo.webp"
+          src="linkedin-logo.png"
           alt="Linkedin"
-          className="dropdown__img"
+          className="__header-img"
         ></img>
       </a>
     </div>
