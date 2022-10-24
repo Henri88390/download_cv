@@ -20,7 +20,7 @@ function Page1(props: FC<Page1Props>) {
     "Python",
   ]);
 
-  const text1 = `I'm a French software & web developer with a Master's degree in IT, currently living in Krakow, Poland.
+  const text1 = `I'm a French software & web developer with a Master's degree in IT.
 
 I have almost 2 years of experience as a software developer. During this time, I've had the occasion to work on both frontend and backend, using different technologies.
 
