@@ -9,7 +9,7 @@ const App = () => {
       <Header />
       <Homepage />
       <Page1 />
-      <ExperiencesPage />
+      <ExperiencesPage /> 
       <ContactPage />
       <Footer />
     </div>

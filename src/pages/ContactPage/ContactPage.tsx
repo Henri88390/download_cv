@@ -9,22 +9,8 @@ const ContactPage: FC<ContactPageProps> = () => {
     name: "",
     email: "",
     message: "",
-  } as Contact);
-
-  const [formStatus, setFormStatus] = React.useState("Send");
-
-  const onSubmit = (e) => {
-    e.preventDefault();
-    setFormStatus("Sending...");
-    const timer1 = setTimeout(() => {
-      setFormStatus("Sent!");
-      const timer2 = setTimeout(() => {
-        setFormStatus("Send");
-        clearTimeout(timer1);
-        clearTimeout(timer2);
-      }, 500);
-    }, 1000);
-  };
+  } as Contact); 
+ 
 
   function handleInput(event: { target: { name: any; value: any } }) {
     setForm((prevForm: Contact) => {
@@ -32,10 +18,32 @@ const ContactPage: FC<ContactPageProps> = () => {
     });
   }
 
+  const [status, setStatus] = useState("Submit");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+    const { name, email, message } = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+    let response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
+  };
+
   return (
     <div className="contact-container">
       <h2 className="contact__title">CONTACT ME</h2>
-      <form onSubmit={onSubmit} className="contact__form">
+      <form onSubmit={handleSubmit} className="contact__form">
         <div className="contact__first-line-wrapper">
           <input
             placeholder="Name"
@@ -66,10 +74,10 @@ const ContactPage: FC<ContactPageProps> = () => {
         />
         <button
           className="contact__submit-btn"
-          onSubmit={onSubmit}
+          onSubmit={handleSubmit}
           type="submit"
         >
-          {formStatus}
+          {status}
         </button>
       </form>
     </div>

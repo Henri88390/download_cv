@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   min-width: 200px;
-  @media (min-width: 1000px) {
-    padding: 50px 200px;
+  @media (min-width: 60rem) {
+    padding: 3rem 12rem;
   }
-  @media (max-width: 1000px) {
-    padding: 50px 100px;
+  @media (max-width: 60rem) {
+    padding: 3rem 6rem;
   }
 }
 
@@ -17,7 +17,7 @@
 
 .contact__first-line-wrapper {
   display: flex;
-  @media (max-width: 1000px) {
+  @media (max-width: 60rem) {
     flex-direction: column;
   }
 
@@ -25,19 +25,19 @@
   margin-bottom: 20px;
 }
 .contact__title {
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   font-weight: bold;
-  margin-bottom: 50px;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
 .contact__form-control {
   border-radius: 5px;
   border: 1px solid grey;
-  height: 30px;
+  height: 2rem;
   padding-left: 15px;
   font-family: "Roboto";
-  @media (min-width: 1000px) {
+  @media (min-width: 60rem) {
     width: 100%;
   }
 }
@@ -45,14 +45,14 @@
 .contact__textarea {
   border-radius: 5px;
   border: 1px solid grey;
-  height: 100px;
+  height: 6px;
   padding: 15px;
   font-family: "Roboto";
 }
 
 .contact__submit-btn {
-  margin-top: 20px;
-  width: 200px;
+  margin-top: 1.25rem;
+  width: 12rem;
   padding: 10px;
   border-radius: 5px;
   font-family: "Roboto";
