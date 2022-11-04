@@ -1,4 +1,4 @@
-import { Footer, Header } from "components";
+import { Footer, Header, Map } from "components";
 import { ContactPage, ExperiencesPage, Homepage, Page1 } from "pages";
 import React from "react";
 import "./App.scss";
