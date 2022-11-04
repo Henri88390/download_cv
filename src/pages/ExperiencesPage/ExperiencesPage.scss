@@ -13,19 +13,19 @@
 .__experiences-body {
   gap: 20px;
   padding: 0px 50px 50px 50px;
-  @media (min-width: 60rem) {
+  @media (min-width: 90rem) {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 400px 400px 400px;
     justify-content: center;
   }
-  @media (min-width: 700px) and (max-width: 60rem) {
+  @media (min-width: 57rem) and (max-width: 90rem) {
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 400px 400px;
     justify-content: center;
   }
-  @media (min-width: 0px) and (max-width: 700px) {
+  @media (min-width: 0rem) and (max-width: 57rem) {
     display: grid;
     grid-template-columns: 300px;
-    justify-content: center; 
+    justify-content: center;
   }
 }
