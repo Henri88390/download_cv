@@ -32,11 +32,6 @@ function ExperienceCard({ props }: Experience) {
           {props.address.city} - {props.address.country}
         </div>
       </div>
-      <Map
-        zoom={10}
-        lat={props.address.position.lat}
-        lng={props.address.position.lng}
-      />
     </div>
   );
 }

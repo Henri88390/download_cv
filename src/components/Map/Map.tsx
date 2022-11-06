@@ -1,26 +1,43 @@
+import L from "leaflet";
+import { MapMarker, Position } from "models";
 import React, { FC } from "react";
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
 import "./Map.scss";
 
 interface MapProps {
-  lat: number;
-  lng: number;
+  position: Position;
   zoom: number;
+  markers: MapMarker[];
 }
 
-const Map: FC<MapProps> = (props: MapProps) => (
-  <MapContainer
-    className="map-container"
-    center={[props.lat, props.lng]}
-    zoom={props.zoom ?? 20}
-    scrollWheelZoom={true}
-  >
-    <TileLayer
-      attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-    />
-    <Marker position={[props.lat, props.lng]}></Marker>
-  </MapContainer>
-);
+function Map(props: MapProps) {
+  let markers = props.markers.map((marker) => {
+    return L.icon({
+      iconUrl: marker.icon,
+      iconSize: [40, 40], // size of the icon
+      iconAnchor: [22, 40], // point of the icon which will correspond to marker's location
+    });
+  });
+  return (
+    <MapContainer
+      className="map-container"
+      center={[props.position.lat, props.position.lng]}
+      zoom={props.zoom}
+      scrollWheelZoom={false}
+    >
+      <TileLayer
+        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      {props.markers.map((item, index) => (
+        <Marker
+          key={item.position.lat}
+          position={[item.position.lat, item.position.lng]}
+          icon={markers[index]}
+        ></Marker>
+      ))}
+    </MapContainer>
+  );
+}
 
 export default Map;
