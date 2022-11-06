@@ -49,7 +49,7 @@ function ExperiencesPage(props: FC<ExperiencesPageProps>) {
         country: "France",
         position: { lat: 48.6651218, lng: 6.158936 } as Position,
       } as Address,
-      startDate: new Date(2019, 8).toDateString(),
+      startDate: new Date(2015, 8).toDateString(),
       endDate: new Date(2020, 6).toDateString(),
       jobTitle: "Master in IT & Machine learning",
     } as Experience,
