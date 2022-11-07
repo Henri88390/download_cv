@@ -1,6 +1,6 @@
 import L from "leaflet";
 import { MapMarker, Position } from "models";
-import React, { FC } from "react";
+import React from "react";
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
 import "./Map.scss";
 
@@ -14,8 +14,8 @@ function Map(props: MapProps) {
   let markers = props.markers.map((marker) => {
     return L.icon({
       iconUrl: marker.icon,
-      iconSize: [40, 40], // size of the icon
-      iconAnchor: [22, 40], // point of the icon which will correspond to marker's location
+      iconSize: [30, 30], // size of the icon
+      iconAnchor: [22, 30], // point of the icon which will correspond to marker's location
     });
   });
   return (
