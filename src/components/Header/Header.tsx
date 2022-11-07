@@ -6,14 +6,14 @@ interface HeaderProps {}
 function Header(props: FC<HeaderProps>) {
   function downloadCv() {
     // using Java Script method to get PDF file
-    fetch("documents/cv.png").then((response) => {
+    fetch("documents/cv.pdf").then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
         // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "CV_Henri_Lambert.png";
+        alink.download = "CV_Henri_Lambert.pdf";
         alink.click();
       });
     });
