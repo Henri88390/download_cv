@@ -23,13 +23,17 @@ function Header(props: FC<HeaderProps>) {
     <div className="header-container">
       <div className="__download-cv-button" onClick={downloadCv}>
         <img
-          src="/icons/cv.png"
-          className="__header-img"
+          src="/icons/download_cv_icon.png"
+          className="__header-img-small"
           alt="Download CV icon"
         ></img>
       </div>
       <a href="mailto:henri.lambert9@gmail.com">
-        <img src="/icons/mail.png" className="__header-img" alt="Mail to"></img>
+        <img
+          src="/icons/mail_icon.png"
+          className="__header-img-small"
+          alt="Mail to"
+        ></img>
       </a>
       <a href="https://github.com/Henri88390" target="_blank" rel="noreferrer">
         <img src="github-logo.png" alt="GitHub" className="__header-img"></img>

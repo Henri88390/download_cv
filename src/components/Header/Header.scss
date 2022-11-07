@@ -16,6 +16,12 @@
   cursor: pointer;
 }
 
+.__header-img-small {
+  height: 40px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
 .__header-img:hover {
   transform: scale(1.1);
 }
