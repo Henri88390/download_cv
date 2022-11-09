@@ -2,9 +2,7 @@
   "name": "react-download-document",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@aws-amplify/ui-react": "^3.5.11",
-    "aws-amplify": "^4.3.43",
+  "dependencies": {  
     "leaflet": "^1.9.2",
     "moment": "^2.29.4",
     "react": "^18.2.0",
